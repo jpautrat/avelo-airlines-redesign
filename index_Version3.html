@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avelo Solstice Redesign | Jeff Pautrat Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+  <header class="bg-blue-900 text-white py-8 shadow">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold">Avelo Solstice Redesign</h1>
+        <p class="text-lg">Capstone Portfolio – Jeff Pautrat</p>
+      </div>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="https://avelo-solstice-redesign-nine.vercel.app/" target="_blank" rel="noopener" class="underline hover:text-blue-200">Live Site</a>
+        <a href="https://github.com/FaithARoberts/avelo-solstice-redesign" target="_blank" rel="noopener" class="underline hover:text-blue-200">GitHub Repo</a>
+        <a href="https://www.figma.com/file/.../AveloRedesign-Solstice" target="_blank" rel="noopener" class="underline hover:text-blue-200">Figma Design</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8 max-w-3xl">
+
+    <!-- Project Overview -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2 text-blue-900">Project Overview</h2>
+      <ul class="mb-4">
+        <li><strong>Project Name:</strong> Avelo Solstice Redesign</li>
+        <li><strong>Role:</strong> Visual Design & Front-End Developer</li>
+        <li><strong>Team Size:</strong> 5</li>
+        <li><strong>Duration:</strong> September–December 2025</li>
+      </ul>
+    </section>
+
+    <!-- Contributions -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2 text-blue-900">My Contributions</h2>
+      <ul class="list-disc ml-6 mb-4">
+        <li>Refined visual hierarchy for Account Creation and Booking interfaces</li>
+        <li>Debugged user flows and identified backend persistence gaps</li>
+        <li>Integrated static flight data from JSON to UI components</li>
+        <li>Built carousel of “Special Deal Getaway” flights</li>
+        <li>Developed seat chooser component after flight selection</li>
+        <li>Improved robustness in flight selection and check-in flow</li>
+        <li>Enabled top logo navigation to landing page</li>
+        <li>Added real Avelo Airlines contact info and terms to “Contact Us” and T&C pages</li>
+      </ul>
+
+      <h3 class="font-semibold mb-1">Technologies Used:</h3>
+      <ul class="list-disc ml-6">
+        <li>Loveable (low-code React component platform)</li>
+        <li>Tailwind CSS</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- Visuals -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2 text-blue-900">Visuals & Screenshots</h2>
+      <figure class="mb-8">
+        <img src="image4.png" alt="Home & Flight Search" class="rounded shadow mb-2"/>
+        <figcaption class="text-sm text-gray-600">Home screen and featured destination card ("Fly To Miami").</figcaption>
+      </figure>
+      <figure class="mb-8">
+        <img src="image3.png" alt="Booking UI" class="rounded shadow mb-2"/>
+        <figcaption class="text-sm text-gray-600">Flight booking interface—search options and preferences.</figcaption>
+      </figure>
+      <figure class="mb-8">
+        <img src="image2.png" alt="Deals UI" class="rounded shadow mb-2"/>
+        <figcaption class="text-sm text-gray-600">Special Deals section—carousel of flight promotions.</figcaption>
+      </figure>
+      <figure class="mb-8">
+        <img src="image1.png" alt="Account & More Menu" class="rounded shadow mb-2"/>
+        <figcaption class="text-sm text-gray-600">Account menu—notifications, payment methods, contact, and terms.</figcaption>
+      </figure>
+
+      <h3 class="font-semibold mb-2">Code Snippet (Seat Chooser Example):</h3>
+      <pre class="bg-gray-200 rounded p-4 text-sm overflow-x-auto"><code>
+{`export const SeatChooser = ({ availableSeats, onSelect }) => (
+  <div className="grid grid-cols-6 gap-2">
+    {availableSeats.map(seat => (
+      <button key={seat.id} onClick={() => onSelect(seat)}
+        className="bg-blue-100 hover:bg-blue-300 rounded p-2 m-1 font-bold">
+        {seat.label}
+      </button>
+    ))}
+  </div>
+);`}
+      </code></pre>
+    </section>
+
+    <!-- Journey -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2 text-blue-900">My Journey</h2>
+      <ul class="list-disc ml-6 mb-4">
+        <li>Learned the critical distinction between interface design and engineering functional prototypes</li>
+        <li>Adapted “perfect” Figma designs to real-world tech constraints</li>
+        <li>Improved technical trade-off decision making</li>
+        <li>Improved cross-discipline communication, working alongside UX researchers and designers</li>
+      </ul>
+      <h3 class="font-semibold mb-1">Challenges Overcome:</h3>
+      <ul class="list-disc ml-6 mb-4">
+        <li>Bridging UI/UX design with low-code development workflows</li>
+        <li>Addressing lack of backend persistence in a prototype environment</li>
+        <li>Ensuring stakeholder and designer feedback was represented in the live prototype</li>
+      </ul>
+      <h3 class="font-semibold mb-1">Skills Gained:</h3>
+      <ul class="list-disc ml-6 mb-4">
+        <li>Front-end development (React & Tailwind CSS)</li>
+        <li>Technical communication</li>
+        <li>Rapid prototyping and user flow testing</li>
+      </ul>
+    </section>
+
+    <!-- Sprint 3 Reflection -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2 text-blue-900">Sprint 3 Reflection</h2>
+      <h3 class="font-semibold mb-1">Sprint 3 Work</h3>
+      <p class="mb-2">
+        In the final sprint, I focused on front-end implementation within Lovable, bridging the gap between Figma designs and our live prototype. My efforts centered on refining the visual hierarchy for account creation and booking interfaces. I debugged the user flow, ensuring UI completeness, and discovered backend persistence issues due to a lack of database integration with the low-code platform. I also integrated static flight data by mapping JSON content to UI components, added a carousel of special deals, and strengthened the check-in flow.
+      </p>
+      <h3 class="font-semibold mb-1">Overall Learning</h3>
+      <p class="mb-2">
+        My biggest takeaway is understanding the difference between design and engineering—a “perfect” mockup rarely translates directly to a functional app. I learned to adapt design for technical constraints, and improved my ability to communicate across disciplines.
+      </p>
+      <h3 class="font-semibold mb-1">Portfolio Link</h3>
+      <p>
+        <a href="https://jpautrat-avelo-solstice-redesign.github.io/" class="text-blue-900 underline">Portfolio Entry – Avelo Solstice Redesign</a>
+      </p>
+    </section>
+
+    <footer class="text-sm text-gray-600 pt-8 border-t mt-12">
+      Jeff Pautrat &middot; Solstice Team &middot; December 4, 2025
+    </footer>
+  </main>
+</body>
+</html>
